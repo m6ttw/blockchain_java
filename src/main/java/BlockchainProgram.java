@@ -1,12 +1,24 @@
+import java.util.Arrays;
+
 public class BlockchainProgram {
 
     public static void main(String[] args) {
 
-        String statement1 = "it is wednesday my dudes";
-        int hashvalue = statement1.hashCode(); // this is built into java
+        // hash function example
+        String statement1 = "it is wednesday my dudes"; // -900083336
+        int hashValue = statement1.hashCode(); // this is built into java
 
         System.out.println("Statement = " + statement1);
-        System.out.println("Hash value = " + hashvalue);
+        System.out.println("Hash value = " + hashValue);
+
+        // hashing arrays
+        String [] testList1 = {"apple", "ball", "cat"}; // -699612432
+        String [] testList2 = {"apple", "ball", "cat"}; // -699612432
+
+        int hashList1 = Arrays.hashCode(testList1);
+        int hashList2 = Arrays.hashCode(testList2);
+
+        System.out.println("Hash 1 = " + hashList1 + " and Hash 2 = " + hashList2);
     }
 
 }
