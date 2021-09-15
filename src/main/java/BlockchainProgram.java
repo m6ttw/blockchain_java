@@ -14,11 +14,13 @@ public class BlockchainProgram {
         // hashing arrays
         String [] testList1 = {"apple", "ball", "cat"}; // -699612432
         String [] testList2 = {"apple", "ball", "cat"}; // -699612432
+        String [] testList3 = {"Apple", "Ball", "Cat"}; // 935457424
 
         int hashList1 = Arrays.hashCode(testList1);
         int hashList2 = Arrays.hashCode(testList2);
+        int hashList3 = Arrays.hashCode(testList3);
 
-        System.out.println("Hash 1 = " + hashList1 + " and Hash 2 = " + hashList2);
+        System.out.println("Hash 1 = " + hashList1 + " and Hash 2 = " + hashList2 + " and Hash 3 = " + hashList3);
     }
 
 }
