@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class BlockchainProgram {
@@ -21,6 +22,15 @@ public class BlockchainProgram {
         int hashList3 = Arrays.hashCode(testList3);
 
         System.out.println("Hash 1 = " + hashList1 + " and Hash 2 = " + hashList2 + " and Hash 3 = " + hashList3);
+
+        // a series of blocks in a chain
+        ArrayList<Block> blockChain = new ArrayList<Block>();
+
+        String[] initialValues = {"Matt has £300", "James has £550", "Sean has £600"};
+        Block genesisBlock = new Block(initialValues, 0);
+        blockChain.add(genesisBlock);
+        System.out.println("First block is " + genesisBlock.toString());
+        System.out.println("The blockchain is " + blockChain.toString());
     }
 
 }
