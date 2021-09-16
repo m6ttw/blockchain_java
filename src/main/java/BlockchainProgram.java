@@ -31,6 +31,13 @@ public class BlockchainProgram {
         blockChain.add(genesisBlock);
         System.out.println("First block is " + genesisBlock.toString());
         System.out.println("The blockchain is " + blockChain.toString());
+
+        // 2nd block
+        String[] mattGivesHisAway = {"Matt gives James $150", "Matt gives Sean £150"};
+        Block secondBlock= new Block(mattGivesHisAway, genesisBlock.getBlockHash());
+        blockChain.add(secondBlock);
+        System.out.println("Second block is " + secondBlock.toString());
+        System.out.println("The blockchain is " + blockChain.toString());
     }
 
 }
